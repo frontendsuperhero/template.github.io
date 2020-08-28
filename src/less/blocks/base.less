@@ -1,0 +1,52 @@
+@import "../fonts/fonts.less";
+@import "../sprite/sprite.less";
+
+.reset();
+
+.wrapper{
+    .wrapper();
+}
+
+@font-face {
+    //.font(@font; @fontRegular);
+}
+
+@font-face {
+    //.font(@PTSans; "@{PTSans}-Bold");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html:not([data-scroll="0"]) header {
+    background: rgba( 2, 2, 2, .4);
+    box-shadow: 0 20px 20px rgba( 0, 0, 0, .1);
+    z-index: 2;
+    .md(display, none);
+}
+
+body {
+    //font-family: @fontRegular;
+     padding: 0;
+     margin: 0;
+}
+
+a, button{
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  input{
+    cursor: text;
+    &:focus{
+        outline: none;
+    }
+  }
+  
+
