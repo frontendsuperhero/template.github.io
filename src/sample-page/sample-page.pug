@@ -1,0 +1,12 @@
+extends ../templates/template
+block base
+    base(href="../")
+block title
+    title sample-page
+//- по умолчанию стиль подключен в шаблоне, а чтобы добавить новый, не перезаписывая основной - append 
+//-block append style 
+    link(rel='stylesheet', href='css/styles1.css', type='text/css')
+block content 
+    include ../modules/header-module
+    .wrapper 
+        h1 Заголовок

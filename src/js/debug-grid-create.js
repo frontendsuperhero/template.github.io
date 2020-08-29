@@ -20,20 +20,20 @@ function divCreating(param) {
 
 function debugGridCreate() {
     let debugGrid = document.querySelector('.debugGrid');
-    let debugGridBtnCreate = document.querySelector('.debugGrid-btncreate');
-    let debugGridBtnRemove = document.querySelector('.debugGrid-btnremove');
-    debugGridBtnCreate.classList.add("debugGrid-btnhidden");
-    debugGridBtnRemove.classList.remove("debugGrid-btnhidden");
-    debugGrid.classList.remove("debugGridz-index-negative");
+    let debugGridBtnCreate = document.querySelector('.debugGrid-btn__create');
+    let debugGridBtnRemove = document.querySelector('.debugGrid-btn__remove');
+    debugGridBtnCreate.classList.add("debugGrid-btn__hidden");
+    debugGridBtnRemove.classList.remove("debugGrid-btn__hidden");
+    debugGrid.classList.remove("debugGrid__z-index-negative");
     divCreating('.debugGrid');
 }
 
 function debugGridRemove() {
     let debugGrid = document.querySelector('.debugGrid');
-    let debugGridBtnCreate = document.querySelector('.debugGrid-btncreate');
-    let debugGridBtnRemove = document.querySelector('.debugGrid-btnremove');
-    debugGridBtnCreate.classList.remove("debugGrid-btnhidden");
-    debugGridBtnRemove.classList.add("debugGrid-btnhidden");
-    debugGrid.classList.add("debugGridz-index-negative");
+    let debugGridBtnCreate = document.querySelector('.debugGrid-btn__create');
+    let debugGridBtnRemove = document.querySelector('.debugGrid-btn__remove');
+    debugGridBtnCreate.classList.remove("debugGrid-btn__hidden");
+    debugGridBtnRemove.classList.add("debugGrid-btn__hidden");
+    debugGrid.classList.add("debugGrid__z-index-negative");
     debugGrid.innerHTML = '';
 }
